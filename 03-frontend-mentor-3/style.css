@@ -23,13 +23,14 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 8px;
   padding: 40px 30px;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
 }
 
 .testimonial:nth-child(1) {
   background-color: hsl(263, 55%, 52%);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top right 50px;
 }
 
 .testimonial:nth-child(2) {
@@ -87,10 +88,21 @@ body {
 .text-1 {
   font-size: 18px;
   font-weight: 600;
+  margin: 20px 0;
 }
 
 .text-2 {
   opacity: 0.7;
+}
+
+.attribution {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #d8e5f2;
+}
+
+.attribution a {
+  color: gold;
 }
 
 @media (min-width: 1200px) {

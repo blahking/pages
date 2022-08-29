@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  border: 1px solid gray;
+}
+
+button,
+input {
+  padding: 1em 2em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+/* common class styles */
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  padding: 50px 8%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* header styles */
+.header {
+  font-family: "Raleway", sans-serif;
+  padding: 60px 8% 0;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.right-section ul {
+  display: flex;
+}
+
+.right-section a {
+  margin-left: 15px;
+}
+
+/* hero styles */
+.hero-content {
+  text-align: center;
+}
+
+.hero-content .title {
+  color: hsl(243, 87%, 12%);
+  font-size: 24px;
+}
+
+.hero-input {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+/* main styles */
+.main {
+  padding-top: 50px;
+}
+
+.section-1 {
+  background-color: #f9f8fe;
+  padding-bottom: 50px;
+}
+
+.section-bg {
+  height: 100px;
+  background-color: white;
+  background-image: url(./images/bg-curve-mobile.svg);
+  background-size: cover;
+  background-position: top 0 left 50%;
+}
+
+.section1-content .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.section1-content .text {
+  color: hsl(238, 22%, 44%);
+}
+
+.see-link {
+  display: flex;
+  align-items: center;
+  color: hsl(170, 45%, 43%);
+  position: relative;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.see-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: hsl(170, 45%, 43%);
+  display: none;
+}
+
+.see-link:hover::after {
+  display: block;
+}
+
+.see-link img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.testimonial {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.15);
+  padding: 50px 30px;
+  border-radius: 10px;
+  background-image: url(./images/icon-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: left 30px top 30px;
+  margin-top: 50px;
+}
+
+.detail {
+  font-size: 14px;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.user-state {
+  font-size: 12px;
+}
+
+/* section2 styles */
+.section-2 {
+  background-color: hsl(238, 22%, 44%);
+  padding: 80px 10%;
+}
+
+.section-2 .title {
+  font-size: 18px;
+}
+
+.section2-content1 {
+  text-align: center;
+  color: hsl(240, 75%, 98%);
+}
+
+.section2-content2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+/* footer styles */
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  padding: 50px 10%;
+}
+
+.lists {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.lists li {
+  padding: 10px 0;
+}
+
+.lists a:hover {
+  color: hsl(224, 93%, 58%);
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.icon-list {
+  justify-self: center;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.lists .icon-list li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-list li:hover {
+  color: hsl(224, 93%, 58%);
+  border-color: hsl(224, 93%, 58%);
+}
+
+.attribution {
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.8rem;
+  background-color: #08082c;
+  color: white;
+}
+
+.attribution a {
+  color: gold;
+}
+
+@media (min-width: 1200px) {
+  /* common class styles */
+  .text {
+    font-size: 18px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .img-container {
+    grid-area: right;
+  }
+
+  .content-container {
+    grid-area: left;
+    text-align: left;
+  }
+
+  /* header styles */
+  .logo {
+    width: 120px;
+  }
+
+  .right-section a {
+    margin-left: 50px;
+  }
+
+  /* hero styles */
+  .hero-content .title {
+    font-size: 36px;
+  }
+
+  .hero-content {
+    width: 550px;
+  }
+
+  .hero-input {
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+  }
+
+  /* main styles */
+  .main {
+    padding-top: 80px;
+  }
+
+  /* section1 styles */
+  .section-1 {
+    padding-bottom: 80px;
+  }
+
+  .section-bg {
+    background-image: url(./images/bg-curve-desktop.svg);
+  }
+
+  .section1-content .title {
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .see-link {
+    margin: 20px 0;
+  }
+
+  .detail {
+    font-size: 15px;
+  }
+
+  .user-name {
+    font-size: 16px;
+  }
+
+  /* section2 styles */
+  .section2-content1 {
+    text-align: left;
+  }
+
+  .section2-content1 .title {
+    font-size: 32px;
+  }
+
+  .section2-content2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "top top"
+      "bottom .";
+  }
+
+  .section2-content2 input {
+    grid-area: top;
+  }
+
+  .section2-content2 button {
+    grid-area: bottom;
+  }
+
+  /* footer styles */
+  .lists {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    justify-items: center;
+  }
+
+  .contact-list {
+    justify-self: flex-start;
+  }
+
+  .icon-list {
+    justify-self: flex-end;
+  }
+}

@@ -79,7 +79,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 20px;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
   padding: 1em 0;
   cursor: pointer;
   position: relative;
@@ -129,6 +129,17 @@ body {
   display: none;
 }
 
+.attribution {
+  padding: 0.5em 0;
+  background-color: hsl(273, 75%, 66%);
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: gold;
+}
+
 @media (min-width: 1200px) {
   .faq-container {
     grid-template-columns: 1fr 1fr;
@@ -159,6 +170,7 @@ body {
   /* faq content style */
   .faq-content {
     align-self: center;
+    margin-right: 50px;
   }
 
   .faq-content h2 {

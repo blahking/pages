@@ -47,4 +47,12 @@ button:hover {
 }
 ```
 
+### baseline alignment
+```css
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+}
+```
+
 

@@ -1,0 +1,425 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  text-align: center;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  border: none;
+  border-radius: 666px;
+  padding: 1em 2em;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.text {
+  margin: 1.2rem 0;
+}
+
+.header,
+.hero,
+.footer {
+  padding: 0 5%;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.header .logo {
+  width: 80px;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header a {
+  margin-left: 1.2rem;
+}
+
+/* hero styles */
+.hero-img {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content .title {
+  font-size: 1.6rem;
+  margin: 1.4rem 0;
+}
+
+.hero-content .text {
+  padding: 0 1.3em;
+  max-width: 566px;
+  margin: 0 auto;
+}
+
+.hero-content button {
+  width: 80%;
+}
+
+/* main styles */
+.main {
+  padding: 80px 5%;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+  margin-bottom: 80px;
+  justify-items: center;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+}
+
+.item-icon {
+  width: 25%;
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.grid-item:nth-child(2) .item-icon {
+  width: 20%;
+}
+
+.grid-item .title {
+  font-size: 1.3rem;
+}
+
+.grid-item .text {
+  width: 85%;
+}
+
+.stay-productive {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 80px 0;
+  justify-items: center;
+}
+
+.content-container {
+  max-width: 550px;
+}
+
+.content-container .title {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.link-container {
+  display: flex;
+}
+
+.link {
+  color: hsl(170, 45%, 43%);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background-color: hsl(170, 45%, 43%);
+  display: none;
+}
+
+.link:hover::after {
+  display: block;
+}
+
+.link img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 20px;
+  background-image: url(./images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: top 5px left 20px;
+  margin-bottom: 200px;
+  justify-items: center;
+}
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+}
+
+.testimonial .text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 20px;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.user-img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-state {
+  font-size: 0.7rem;
+}
+
+.start {
+  background-color: hsl(217, 28%, 15%);
+  text-align: center;
+  padding-bottom: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 90%;
+  max-width: 600px;
+  transform: translate(-50%, 50%);
+}
+
+.start .title {
+  font-size: 1.2rem;
+  padding-top: 2em;
+}
+
+.start .text {
+  padding: 0 2em;
+}
+
+.email-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.email-grid input {
+  border: none;
+  border-radius: 666px;
+  padding: 1em 2em;
+  margin-top: 2rem;
+}
+
+.email-grid button {
+  margin: 1.5rem 0;
+}
+
+.footer {
+  background-color: hsl(216, 53%, 9%);
+  padding-top: 300px;
+}
+
+.footer .logo {
+  width: 120px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px 0;
+  row-gap: 20px;
+}
+
+.footer-content img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.location,
+.contact div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.link-list li {
+  padding-bottom: 1em;
+}
+
+.icons {
+  justify-self: center;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.icons li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.attribution a {
+  color: gold;
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* hero styles */
+  .hero-content .title {
+    font-size: 2rem;
+  }
+
+  .hero-content button {
+    width: 300px;
+  }
+
+  /* main styles */
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    column-gap: 40px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .stay-productive {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+  }
+
+  .img-container {
+    width: 600px;
+    justify-self: center;
+  }
+
+  .content-container .title {
+    font-size: 2rem;
+    text-align: left;
+    width: 300px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    padding: 50px;
+  }
+
+  .start {
+    width: 60%;
+    max-width: 900px;
+  }
+
+  .start .title {
+    font-size: 1.8rem;
+  }
+
+  .start .text {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .email-grid {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 50px;
+    padding: 10px 80px;
+  }
+
+  .email-grid input,
+  .email-grid button {
+    margin: 0;
+  }
+
+  /* footer styles */
+  .footer-content {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: flex-start;
+    justify-items: flex-end;
+    column-gap: 20px;
+  }
+}

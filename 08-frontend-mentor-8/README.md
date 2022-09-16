@@ -10,7 +10,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## 🔗 Links
 
-- Live Site URL: [Visit online](http://blahking.github.io/pages/01-frontend-mentor-1)
+- Live Site URL: [Visit online](http://blahking.github.io/pages/08-frontend-mentor-8)
 
 
 ## ✍️ What I learned 

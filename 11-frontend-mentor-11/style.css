@@ -30,7 +30,7 @@ p {
 
 main {
   width: 90%;
-  max-width: 57.5rem;
+  max-width: 30rem;
   border-radius: 8px;
   overflow: hidden;
   margin-top: 3.125rem;
@@ -108,6 +108,7 @@ footer a {
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 57.5rem;
   }
 
   article button {

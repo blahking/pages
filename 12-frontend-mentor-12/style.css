@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: hsl(229, 6%, 66%);
+}
+
+header {
+  width: 80%;
+  max-width: 31.25rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 200;
+  font-size: 22px;
+  color: hsl(234, 12%, 34%);
+  margin-top: 5.625rem;
+}
+
+header p {
+  margin-top: 2.375rem;
+  margin-bottom: 3.75rem;
+  font-size: 0.9375rem;
+}
+
+article {
+  width: 19.5625rem;
+  height: 14.0625rem;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px 5px 10px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-position: right 35px bottom 30px;
+  border-radius: 8px;
+  padding: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+article h2 {
+  font-size: 1.125rem;
+  color: hsl(234, 12%, 34%);
+}
+
+article p {
+  margin-top: 1em;
+}
+
+.supervisor {
+  border-top: solid 5px hsl(180, 62%, 55%);
+  background-image: url(./images/icon-supervisor.svg);
+}
+
+.team-builder {
+  border-top: solid 5px hsl(0, 78%, 62%);
+  background-image: url(./images/icon-team-builder.svg);
+}
+
+.karma {
+  border-top: solid 5px hsl(34, 97%, 64%);
+  background-image: url(./images/icon-karma.svg);
+}
+
+.calculator {
+  border-top: solid 5px hsl(212, 86%, 64%);
+  background-image: url(./images/icon-calculator.svg);
+}
+
+.attribution {
+  font-size: 11px;
+  padding: 1em 0;
+  color: black;
+}
+
+footer a {
+  color: gold;
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    column-gap: 30px;
+    align-items: center;
+    grid-auto-flow: column;
+  }
+
+  .supervisor,
+  .calculator {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

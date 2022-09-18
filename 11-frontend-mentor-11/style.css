@@ -10,6 +10,7 @@ body {
   grid-template-rows: 1fr 50px;
   place-items: center;
   min-height: 100vh;
+  background-color: hsl(0, 0%, 95%);
 }
 
 h1 {

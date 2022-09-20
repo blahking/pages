@@ -40,6 +40,7 @@ main {
   margin: 0 5%;
   border-radius: 15px;
   overflow: hidden;
+  text-align: center;
 }
 
 .img-container img {
@@ -47,21 +48,18 @@ main {
   display: block;
 }
 
-.content-container {
-  padding: 0 1.625rem;
-  margin: 1.875rem 0;
-  text-align: center;
-}
-
-.content-container h1 {
+.order-container h1 {
   font-size: 1.5rem;
   font-weight: 900;
-  margin: 1rem 0;
+  margin-left: 1.625rem;
+  margin-right: 1.625rem;
+  margin-top: 1.875rem;
+  margin-bottom: 1rem;
   color: hsl(223, 47%, 23%);
 }
 
-.content-container p {
-  margin: 1rem 0;
+.order-container p {
+  margin: 1rem 1.625rem;
   line-height: 1.5;
   color: hsl(224, 23%, 55%);
 }
@@ -71,7 +69,7 @@ main {
   align-items: center;
   background-color: hsl(225, 100%, 98%);
   border-radius: 0.5rem;
-  margin: 1rem 0;
+  margin: 1rem 1.625rem;
 }
 
 .price .icon-container {
@@ -81,6 +79,7 @@ main {
 .price p {
   display: flex;
   flex-direction: column;
+  margin-left: 0;
 }
 
 .price p span:first-child {
@@ -100,8 +99,10 @@ main {
 }
 
 .btn {
-  width: 100%;
+  width: calc(100% - 3.25rem);
   margin-top: 1rem;
+  margin-left: 1.625rem;
+  margin-right: 1.625rem;
   border: none;
   padding: 1em 0;
   font-weight: 700;
@@ -123,6 +124,7 @@ main {
 .btn2 {
   background-color: transparent;
   color: hsl(224, 23%, 55%);
+  margin-bottom: 1.875rem;
 }
 
 .btn2:hover {

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+}
+
+picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+picture img {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-container {
+  max-width: 28.125rem;
+  background-color: white;
+  margin: 0 5%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+}
+
+.content-container {
+  padding: 0 1.625rem;
+  margin: 1.875rem 0;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 1rem 0;
+  color: hsl(223, 47%, 23%);
+}
+
+.content-container p {
+  margin: 1rem 0;
+  line-height: 1.5;
+  color: hsl(224, 23%, 55%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.price .icon-container {
+  margin: 0 1rem;
+}
+
+.price p {
+  display: flex;
+  flex-direction: column;
+}
+
+.price p span:first-child {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.price a {
+  margin-left: auto;
+  margin-right: 1rem;
+  color: hsl(245, 75%, 52%);
+}
+
+.price a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+  border: none;
+  padding: 1em 0;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.btn1 {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn1:hover {
+  opacity: 0.7;
+}
+
+.btn2 {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+}
+
+.btn2:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  padding: 1em 0;
+}
+
+.attribution a {
+  color: gold;
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}

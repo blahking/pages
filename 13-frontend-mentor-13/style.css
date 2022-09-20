@@ -6,9 +6,6 @@
 
 body {
   font-family: "Outfit", sans-serif;
-}
-
-main {
   background-color: hsl(217, 54%, 11%);
   min-height: 100vh;
   display: flex;
@@ -17,8 +14,12 @@ main {
   align-items: center;
 }
 
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 article {
-  width: 90%;
   max-width: 21.875rem;
   background-color: hsl(216, 50%, 16%);
   color: hsl(215, 51%, 70%);
